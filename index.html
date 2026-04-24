@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Margarita Salas</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Georgia', serif;
+      background: #ffffff;
+    }
+
+    .wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 56px 32px;
+    }
+
+    /* --- Hero --- */
+    .hero {
+      display: flex;
+      gap: 28px;
+      align-items: center;
+      border-bottom: 2px solid #0C447C;
+      padding-bottom: 28px;
+      margin-bottom: 28px;
+    }
+
+    .photo-wrap {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      border: 3px solid #0C447C;
+      flex-shrink: 0;
+      overflow: hidden;
+    }
+
+    .photo-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+      display: block;
+    }
+
+    .hero-tag {
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #185FA5;
+      font-family: Arial, sans-serif;
+      margin-bottom: 6px;
+    }
+
+    .hero-name {
+      font-size: 32px;
+      font-weight: 700;
+      color: #042C53;
+      margin-bottom: 5px;
+    }
+
+    .hero-sub {
+      font-size: 14px;
+      color: #185FA5;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    .credit {
+      font-size: 10px;
+      color: #aaaaaa;
+      font-family: Arial, sans-serif;
+      margin-top: 5px;
+    }
+
+    /* --- Citazione --- */
+    .quote {
+      border-left: 3px solid #0C447C;
+      padding: 16px 22px;
+      margin-bottom: 28px;
+      background: #E6F1FB;
+      border-radius: 0 8px 8px 0;
+    }
+
+    .quote-text {
+      font-size: 16px;
+      color: #042C53;
+      font-style: italic;
+      line-height: 1.8;
+      margin-bottom: 8px;
+    }
+
+    .quote-src {
+      font-size: 12px;
+      color: #185FA5;
+      font-family: Arial, sans-serif;
+      font-weight: 700;
+    }
+
+    /* --- Card grid --- */
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-bottom: 28px;
+    }
+
+    .card {
+      border: 1px solid #B5D4F4;
+      border-radius: 8px;
+      padding: 18px;
+    }
+
+    .card-label {
+      font-size: 10px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #185FA5;
+      font-family: Arial, sans-serif;
+      margin-bottom: 6px;
+    }
+
+    .card-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: #042C53;
+      margin-bottom: 7px;
+      font-family: Arial, sans-serif;
+    }
+
+    .card-text {
+      font-size: 13px;
+      color: #444444;
+      line-height: 1.7;
+      font-family: Arial, sans-serif;
+    }
+
+    /* --- Timeline --- */
+    .section-title {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #0C447C;
+      font-family: Arial, sans-serif;
+      margin-bottom: 18px;
+      border-top: 1px solid #B5D4F4;
+      padding-top: 22px;
+    }
+
+    .timeline {
+      border-left: 2px solid #0C447C;
+      padding-left: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .tl-item { position: relative; }
+
+    .tl-dot {
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background: #0C447C;
+      position: absolute;
+      left: -30px;
+      top: 4px;
+    }
+
+    .tl-year {
+      font-size: 11px;
+      font-weight: 700;
+      color: #185FA5;
+      font-family: Arial, sans-serif;
+      margin-bottom: 2px;
+    }
+
+    .tl-text {
+      font-size: 13px;
+      color: #333333;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    /* --- Responsive --- */
+    @media (max-width: 600px) {
+      .hero { flex-direction: column; text-align: center; }
+      .grid { grid-template-columns: 1fr; }
+      .hero-name { font-size: 24px; }
+      .wrap { padding: 36px 16px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="photo-wrap">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Margarita_Salas_Falgueras_062019.jpg/320px-Margarita_Salas_Falgueras_062019.jpg" alt="Margarita Salas"/>
+    </div>
+    <div>
+      <p class="hero-tag">Biologa molecolare · 1938 – 2019</p>
+      <h1 class="hero-name">Margarita Salas</h1>
+      <p class="hero-sub">Spagna · Allieva di Severo Ochoa · Premio Europeo dell'Inventore 2019</p>
+      <p class="credit">Foto: Wikimedia Commons, CC BY-SA 4.0</p>
+    </div>
+  </div>
+
+  <!-- Citazione -->
+  <div class="quote">
+    <p class="quote-text">"La ricerca è una vera passione per me. Non riesco a immaginare la vita senza di essa. Spero di poter continuare a fare ricerca per molti anni ancora."</p>
+    <p class="quote-src">— Margarita Salas, European Patent Office Interview, 2019</p>
+  </div>
+
+  <!-- Card grid -->
+  <div class="grid">
+    <div class="card">
+      <p class="card-label">Scoperta principale</p>
+      <p class="card-title">DNA polimerasi del fago φ29</p>
+      <p class="card-text">Isolò un enzima capace di replicare il DNA con straordinaria fedeltà e continuità, rivoluzionando la biologia molecolare e la diagnostica genetica mondiale.</p>
+    </div>
+    <div class="card">
+      <p class="card-label">Collegamento con la Fisica</p>
+      <p class="card-title">Termodinamica e forze molecolari</p>
+      <p class="card-text">Il meccanismo dell'enzima φ29 segue leggi fisiche precise: forze di Van der Waals, termodinamica e meccanica quantistica spiegano come "legge" e copia il DNA.</p>
+    </div>
+    <div class="card">
+      <p class="card-label">Impatto scientifico</p>
+      <p class="card-title">Base dei test genetici moderni</p>
+      <p class="card-text">La sua tecnica è usata in medicina legale, oncologia, archeologia forense e sviluppo di vaccini. Il brevetto è il più redditizio mai depositato dal CSIC spagnolo.</p>
+    </div>
+    <div class="card">
+      <p class="card-label">Eredità</p>
+      <p class="card-title">Pioniera e modello femminile</p>
+      <p class="card-text">Prima donna all'Accademia Reale delle Scienze spagnola. Ha ricevuto oltre 40 dottorati honoris causa e ha formato generazioni di ricercatori in tutto il mondo.</p>
+    </div>
+  </div>
+
+  <!-- Timeline -->
+  <p class="section-title">Linea del tempo</p>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <p class="tl-year">1938</p>
+      <p class="tl-text">Nasce a Canero, Asturias, Spagna</p>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <p class="tl-year">1963</p>
+      <p class="tl-text">Dottorato in biochimica all'Università Complutense di Madrid</p>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <p class="tl-year">1964 – 1967</p>
+      <p class="tl-text">Ricerca alla New York University con il premio Nobel Severo Ochoa</p>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <p class="tl-year">1973</p>
+      <p class="tl-text">Scopre e studia la DNA polimerasi del batteriofago φ29</p>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <p class="tl-year">1991</p>
+      <p class="tl-text">Ottiene il brevetto USA per la replicazione del DNA con φ29</p>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <p class="tl-year">2003</p>
+      <p class="tl-text">Prima donna eletta all'Accademia Reale delle Scienze Spagnola</p>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <p class="tl-year">2019</p>
+      <p class="tl-text">Riceve il Premio Europeo dell'Inventore — categoria "Lifetime Achievement". Scompare il 7 novembre a Madrid</p>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
